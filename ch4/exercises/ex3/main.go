@@ -6,7 +6,7 @@ func main() {
 	var total int
 
 	for i := 0; i < 10; i++ {
-		total := total + i
+		total := total + i // This should be '=' to correclty increase total
 		fmt.Println(total)
 	}
 

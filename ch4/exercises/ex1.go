@@ -13,12 +13,9 @@ func Ex1And2() {
 		myInts[i] = rand.Intn(100)
 	}
 
-	fmt.Println(myInts)
-	fmt.Println(len(myInts))
-
-	for v := range myInts {
+	for _, v := range myInts {
 		switch {
-		case v%2 == 0 && v%3 == 0:
+		case v%6 == 0:
 			fmt.Println("Six!")
 		case v%2 == 0:
 			fmt.Println("Two!")
