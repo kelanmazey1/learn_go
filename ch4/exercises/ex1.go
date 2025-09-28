@@ -7,16 +7,16 @@ import (
 
 func Ex1And2() {
 
-	my_ints := make([]int, 100)
+	myInts := make([]int, 100)
 
 	for i := 0; i < 100; i++ {
-		my_ints[i] = rand.Intn(100)
+		myInts[i] = rand.Intn(100)
 	}
 
-	fmt.Println(my_ints)
-	fmt.Println(len(my_ints))
+	fmt.Println(myInts)
+	fmt.Println(len(myInts))
 
-	for v := range my_ints {
+	for v := range myInts {
 		switch {
 		case v%2 == 0 && v%3 == 0:
 			fmt.Println("Six!")
